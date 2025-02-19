@@ -13,6 +13,10 @@ const email="nikhar@gmail.com";
 const roll="22187685";
 
 
+app.get("/", (req, res) => {
+    res.send("API received");
+})
+
 app.post("/new",(req,res)=>{
     const {data}=req.body;
 
